@@ -75,7 +75,7 @@ h1{
   width: 100%;
   align-items: flex-end;
   text-align: center;
-  margin-top: 125px;
+  margin-top: 160px;
   justify-content: center;
 }
 
@@ -121,10 +121,10 @@ h1{
   border-radius: 30px;
 }
 h3{
-  font-size: 15px;
+  font-size: 18px;
   margin: auto;
   padding: 5px 0;
-  height: 65px;
+  color: black;
 }
 
 .title{
@@ -136,7 +136,7 @@ h3{
   font-size: 20px;
   text-align: center;
   width: 33%;
-  color: black;
+  color: white;
   font-weight: 900;
 }
 
