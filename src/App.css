@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Nunito:wght@300;400&family=Oswald:wght@500&family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root{
+  background: #FFECEC;  /* fallback for old browsers */
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+}
+
+.container{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+h1{
+  margin-top: 30px;
+  letter-spacing: 2px;
+}
+.card {
+  width: 320px;
+  background-image: url('https://i0.wp.com/www.csscodelab.com/wp-content/uploads/2020/04/react-wave-background-animation.png?w=1150&ssl=1');
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
+  position: relative;
+  border-radius: 2.5em;
+  padding: 2em;
+  transition: transform 0.4s ease;
+  margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: transform 0.4s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card .card-top, .card .card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .card-top p, .card .card-top .card-title, .card .card-bottom p, .card .card-bottom .card-title {
+  
+  margin: 0;
+}
+
+.card .card-title {
+  color: black;
+  font-weight: bold;
+}
+
+.card .card-top p, .card .card-bottom p {
+  font-weight: 700;
+}
+
+.card .card-bottom {
+  padding: 7px 0;;
+  display: flex;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  width: 100%;
+  align-items: flex-end;
+  text-align: center;
+  margin-top: 125px;
+  justify-content: center;
+}
+
+.card .card-image {
+  position: absolute;
+  width: 100%;
+  height: 20vh;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  margin: 70px 0;
+}
+
+.card .card-image svg {
+  width: 4em;
+  height: 4em;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(0.97);
+}
+
+.card:hover .card-content {
+  transform: scale(0.96);
+}
+
+.card:hover .card-image svg {
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.9);
+}
+
+.center{
+  margin: 0px 30px;
+  background-color: darkcyan;
+  padding: 7px;
+  border-radius: 30px;
+}
+h3{
+  font-size: 15px;
+  margin: auto;
+  padding: 5px 0;
+  height: 65px;
+}
+
+.title{
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  text-align: center;
+  width: 33%;
+  color: black;
+  font-weight: 900;
+}
+
+img{
+  width: 30px;
+  border-radius: 20px;
+}
+.venue{
+  padding-top: 20px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
 }
