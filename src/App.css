@@ -75,7 +75,7 @@ h1{
   width: 100%;
   align-items: flex-end;
   text-align: center;
-  margin-top: 160px;
+  margin-top: 170px;
   justify-content: center;
 }
 
@@ -124,7 +124,7 @@ h3{
   font-size: 18px;
   margin: auto;
   padding: 5px 0;
-  color: black;
+  color: white;
 }
 
 .title{
