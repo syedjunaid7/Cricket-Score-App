@@ -1,10 +1,9 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import React from "react";
-import MatchBoard from "./MatchBoard";
 export default function App() {
     const [data, setData] = useState([]);
-  const apiKey = "193b8ee9-9062-4650-a537-e420474408a3";
+  const apiKey = "a6a729e8-9bbf-45d2-b8ea-3abff4381eb0";
 
     useEffect(() => {
       api();
@@ -26,7 +25,7 @@ export default function App() {
           <div class="card-content">
             <div class="card-top">
               <span class="card-title">{item.matchType}</span>
-              <p class="card-title">{item.date}</p>
+              <p >{item.date}</p>
             </div>
             <div class="card-bottom">
               <p>{item.status}</p>
