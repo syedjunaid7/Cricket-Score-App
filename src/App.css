@@ -9,7 +9,7 @@
   font-family: 'Space Grotesk', sans-serif;
 }
 #root{
-  background: #FFECEC;  /* fallback for old browsers */
+  background: #F9F5F6;  /* fallback for old browsers */
   display: flex;
   justify-content: center;
   align-items: center;
