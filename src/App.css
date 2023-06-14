@@ -13,7 +13,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .container{
@@ -26,7 +27,7 @@ h1{
   letter-spacing: 2px;
 }
 .card {
-  width: 320px;
+  width: 385px;
   background-image: url('https://haikei.app/_next/static/images/edge-blob-1-d6c1515602bb029e94b1f8d9ef227f2d.png');
   background-repeat: no-repeat;
   background-size: cover;
